@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata — Your Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo">Peter Juliano Wyanto</h1>
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <nav id="mainNav" class="nav">
+                <a href="#contact">Contact</a>
+                <a href="#biodata">Biodata</a>
+                <a href="#media">Media Social</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>Hello — I'm Peter</h2>
+                <p class="tagline">Im a student in Sekolah Dian Harapan Lippo Village.</p>
+                <p class="cta"><a href="#biodata" class="btn">View Biodata</a></p>
+            </div>
+        </section>
+
+        <section id="biodata" class="section">
+            <div class="container">
+                <h3>Biodata</h3>
+                <div class="biodata-photos">
+                    <img src="me1.png" alt="me1" onerror="this.onerror=null;this.src='https://via.placeholder.com/200?text=me1'">
+                    <img src="me2.png" alt="me2" onerror="this.onerror=null;this.src='https://via.placeholder.com/200?text=me2'">
+                </div>
+                <ul class="biodata-list">
+                    <li><strong>Full Name:</strong> Peter Juliano Wyanto</li>
+                    <li><strong>Date of Birth:</strong> 20/07/2012</li>
+                    <li><strong>Location:</strong> Tangerang, Indonesia</li>
+                    <li><strong>Education:</strong> Sekolah Dian Harapan Lippo Village</li>
+                    <li><strong>Profession:</strong> Student, Athlete</li>
+                    <li><strong>Skills:</strong> Badminton, Motor Automotive, Designing</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="media" class="section">
+            <div class="container">
+                <h3>Media Social</h3>
+                <p>Find me on:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/peter.julianow/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://wa.me/6282249997785" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="https://www.facebook.com/profile.php?id=61566397291001" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+                <div class="media-gallery">
+                    <a href="https://www.instagram.com/peter.julianow/" target="_blank" rel="noopener noreferrer"><img src="instagram-removebg-preview.png" alt="Instagram logo"></a>
+                    <a href="https://wa.me/6282249997785" target="_blank" rel="noopener noreferrer"><img src="whatsapp-removebg-preview.png" alt="WhatsApp logo"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61566397291001" target="_blank" rel="noopener noreferrer"><img src="facebook-removebg-preview.png" alt="Facebook logo"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h3>Contact</h3>
+                <h2 class="contact-phone" role="button" tabindex="0" aria-label="Copy phone number">+62 822-4999-7785</h2>
+                <!-- contact logos moved to Media Social section -->
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/mljrnqpa" method="post">
+                    <label>Name(optional)<input type="text" name="name"></label>
+                    <label>Email(optional)<input type="email" name="email"></label>
+                    <label>Message(optional)<textarea name="message" rows="4"></textarea></label>
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+                <p class="note">Messages are submitted via Formspree. You will receive them at your Formspree email.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© <span id="year"></span> Your Name. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
